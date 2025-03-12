@@ -1,0 +1,10 @@
+{
+    "nb__alpha": 0.1,
+    "tfidf__max_df": 0.75,
+    "tfidf__max_features": null,
+    "tfidf__min_df": 1,
+    "tfidf__ngram_range": [
+        1,
+        2
+    ]
+}
