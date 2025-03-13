@@ -1,4 +1,5 @@
-pip freeze > requirements.txt
-git add requirements.txt
-git commit -m "Updated dependencies"
-git push origin main
+Flask
+gunicorn
+scikit-learn
+numpy
+pandas
