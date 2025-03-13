@@ -5,7 +5,7 @@ from flask import Flask, request, render_template
 with open("spam_classifier.pkl", "rb") as f:
     model = pickle.load(f)
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="templates")  # Ensure Flask finds index.html
 
 @app.route('/')
 def home():
