@@ -1,29 +1,22 @@
 import pickle
-from flask import Flask, request, render_template
+import streamlit as st
 
 # Load the trained model
 with open("spam_classifier.pkl", "rb") as f:
     model = pickle.load(f)
 
-app = Flask(__name__, template_folder="templates")  # Ensure Flask finds index.html
+# Streamlit UI
+st.title("📩 Spam Detection App")
 
-@app.route('/')
-def home():
-    return render_template('index.html')
+st.write("Enter a message below to check if it's Spam or Ham:")
 
-@app.route('/predict', methods=['POST'])
-def predict():
-    try:
-        message = request.form['message']
-        if not message.strip():
-            return render_template('index.html', prediction_text="⚠️ Please enter a message!")
+message = st.text_area("Message", "")
 
+if st.button("Predict"):
+    if not message.strip():
+        st.warning("⚠️ Please enter a message!")
+    else:
         prediction = model.predict([message])[0]
-        result = "Spam" if prediction == 1 else "Ham"
-        return render_template('index.html', prediction_text=f'This message is: {result}')
-    
-    except Exception as e:
-        return render_template('index.html', prediction_text=f"Error: {str(e)}")
+        result = "🚨 Spam" if prediction == 1 else "✅ Ham"
+        st.subheader(f"This message is: {result}")
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=10000)
