@@ -15,7 +15,11 @@ if st.button("Predict"):
     if not message.strip():
         st.warning("⚠️ Please enter a message!")
     else:
-        # Make a prediction using the trained model
-        prediction = model.predict([message])[0]
-        result = "🚨 Spam" if prediction == 1 else "✅ Ham"
-        st.subheader(f"This message is: {result}")
+        try:
+            # Make a prediction using the trained model
+            prediction = model.predict([message])[0]
+            result = "🚨 Spam" if prediction == 1 else "✅ Ham"
+            st.subheader(f"This message is: {result}")
+        except Exception as e:
+            st.error(f"❌ Prediction Error: {str(e)}")
+
