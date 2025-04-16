@@ -36,8 +36,8 @@ pip install -r requirements.txt
 Run the Streamlit app:
 streamlit run app.py
 
-  Local URL: http://localhost:8501
-  Network URL: http://192.168.1.169:8501
+  Local URL: [http://localhost:8501](http://localhost:8501)
+  Network URL: http://192.168.1.170:8501
 
 ![image](https://github.com/user-attachments/assets/7891781c-1b26-4961-8d26-e6839b25f39b)
 
