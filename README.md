@@ -30,6 +30,11 @@ This project is a machine learning model that classifies text messages as **Spam
    git clone https://github.com/YourUsername/spam-classifier.git
    cd spam-classifier
 
+Install dependencies:
+pip install -r requirements.txt
+
+Run the Streamlit app:
+streamlit run app.py
 
   Local URL: http://localhost:8501
   Network URL: http://192.168.1.169:8501
