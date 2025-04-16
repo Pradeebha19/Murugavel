@@ -1,21 +1,35 @@
 # 📧 Spam Message Classifier
 
-This project is a Machine Learning-based spam detection system built with Python, Scikit-learn, and Streamlit.
+This project is a machine learning model that classifies text messages as **Spam** or **Ham** (not spam). It's built using Python, trained with a Naive Bayes algorithm, and deployed using Streamlit for a user-friendly interface.
 
-## 🚀 Features
+---
 
-- Detects whether a message is Spam or Ham (not spam)
-- Web interface using Streamlit
-- Trained using GridSearchCV and Multinomial Naive Bayes
-- Uses TF-IDF for text vectorization
+## 📌 Project Overview
 
-## 🛠️ Installation
+- **Model**: Multinomial Naive Bayes
+- **Vectorizer**: TF-IDF
+- **Training Tool**: GridSearchCV for hyperparameter tuning
+- **Interface**: Streamlit app for prediction
+- **Goal**: To detect unwanted messages with high accuracy
 
-### Step 1: Clone the repository
+---
 
-```bash
-git clone https://github.com/YourUsername/spam-classifier.git
-cd spam-classifier
+## 🧠 How It Works
+
+1. **Text Preprocessing** (removes numbers, punctuation, lowercases, etc.)
+2. **TF-IDF Vectorization** of the cleaned text
+3. **Model Prediction** using a trained Naive Bayes classifier
+4. **Web Interface** shows prediction: Spam or Ham
+
+---
+
+## 🛠 How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/YourUsername/spam-classifier.git
+   cd spam-classifier
+
 
   Local URL: http://localhost:8501
   Network URL: http://192.168.1.169:8501
