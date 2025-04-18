@@ -1,8 +1,12 @@
 # 📧 Spam Message Classifier
 
-This project is a machine learning model that classifies text messages as **Spam** or **Ham** (not spam). It's built using Python, trained with a Naive Bayes algorithm, and deployed using Streamlit for a user-friendly interface.
-
+Welcome to the Spam Message Detection App! This project uses machine learning to identify whether a given text message is spam or not (ham). It’s a smart solution built using Python, trained on real-world data, and designed to help filter unwanted messages efficiently.
 ---
+About the Project
+This project is a text classification system that can distinguish between spam and ham (legitimate) SMS messages. Using Natural Language Processing (NLP) and machine learning, it learns patterns from past messages and predicts whether new messages are spam.
+
+The application is wrapped in an easy-to-use Streamlit interface, so you can try it out directly from your browser!
+
 
 ## 📌 Project Overview
 
@@ -16,11 +20,14 @@ This project is a machine learning model that classifies text messages as **Spam
 
 ## 🧠 How It Works
 
-1. **Text Preprocessing** (removes numbers, punctuation, lowercases, etc.)
-2. **TF-IDF Vectorization** of the cleaned text
-3. **Model Prediction** using a trained Naive Bayes classifier
-4. **Web Interface** shows prediction: Spam or Ham
 
+Text Cleaning: The messages are converted to lowercase, and all numbers, punctuation, and extra whitespace are removed.
+
+Vectorization: Words are converted into numerical features using TF-IDF (Term Frequency-Inverse Document Frequency).
+
+Model: A Multinomial Naive Bayes model is trained to recognize spam patterns.
+
+Tuning: We used GridSearchCV to fine-tune parameters for the best accuracy.
 ---
 
 ## 🛠 How to Run
