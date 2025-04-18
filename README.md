@@ -31,6 +31,13 @@ Tuning: We used GridSearchCV to fine-tune parameters for the best accuracy---
 ## 📬 Example
 ![image](https://github.com/user-attachments/assets/7891781c-1b26-4961-8d26-e6839b25f39b)
 
+
+🙋‍♀️ Author
+Pradeebha M
+Email: [your email if you want to include it]
+GitHub: https://github.com/Pradeebha19
+
+
 ## 🛠 How to Run
 
 Clone the repository:
