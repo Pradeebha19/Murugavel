@@ -28,6 +28,9 @@ Model: A Multinomial Naive Bayes model is trained to recognize spam patterns.
 
 Tuning: We used GridSearchCV to fine-tune parameters for the best accuracy---
 
+## 📬 Example
+![image](https://github.com/user-attachments/assets/7891781c-1b26-4961-8d26-e6839b25f39b)
+
 ## 🛠 How to Run
 
 Clone the repository:
@@ -35,14 +38,8 @@ Clone the repository:
    git clone https://github.com/YourUsername/spam-classifier.git
    cd spam-classifier
 
-Install dependencies:
-pip install -r requirements.txt
+   Install dependencies:
+   pip install -r requirements.txt
 
-Run the Streamlit app:
-streamlit run app.py
-
-Local URL: [http://localhost:8501](http://localhost:8501)
-Network URL: http://192.168.1.170:8501
-
-![image](https://github.com/user-attachments/assets/7891781c-1b26-4961-8d26-e6839b25f39b)
-
+   Run the Streamlit app:
+   streamlit run app.py
